@@ -1,6 +1,6 @@
-import readTrainingImagesKNNval as rtr
+import readTrainingImagesrandomforestval as rtr
 import readTestImages as rts
-import knn as knn
+import randomforest as randomforest
 
 import writePrediction as wrpr
 
@@ -15,9 +15,9 @@ def main():
 	# Uncomment to execute Regression
 	#predictions = reg.CNN(features_train, labels_train, features_val, labels_val, features_test)
 	# Uncomment to execute Deep Convolutional Neural Network
-	predictions = knn.knn_val(features_train, labels_train, features_val, labels_val)
-	
-	
+	predictions = randomforest.randomforest_val(features_train, labels_train, features_val, labels_val)
+
+
 	print(predictions)
 
 
